@@ -19,14 +19,17 @@
 ## setup
 
 ```sh
+# 主应用
 cd app-main
 yarn
 yarn dev
 
+# 子应用
 cd app-react
 yarn
 yarn start
 
+# 子应用
 cd app-vue
 yarn
 yarn dev
