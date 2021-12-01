@@ -1,10 +1,17 @@
 # micro-app
-## 基于 qiankun 的微前端方案。 
 
-### 主应用：vue3 + vite 
+## 基于 qiankun 的微前端方案。
 
-### 子应用 
+### 主应用：app-main
 
-1. vue3+vite
-2. vue3+vue-cli
-3. react
+技术栈：vue3 + vite
+
+### 子应用
+
+#### app-vue
+
+技术栈：vue3+vite
+
+#### app-react
+
+技术栈：react + webpack

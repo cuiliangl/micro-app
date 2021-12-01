@@ -8,11 +8,6 @@ const microApps = [
     name: 'app-react',
     entry: import.meta.env.VITE_APP_SUB_REACT as string,
     activeRule: '/app-react'
-  },
-  {
-    name: 'hello-word',
-    entry: import.meta.env.VITE_APP_SUB_HELLO_WORLD as string,
-    activeRule: '/hello-world'
   }
 ]
 
