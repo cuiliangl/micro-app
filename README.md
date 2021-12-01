@@ -15,3 +15,19 @@
 #### app-react
 
 技术栈：react + webpack
+
+## setup
+
+```sh
+cd app-main
+yarn
+yarn dev
+
+cd app-react
+yarn
+yarn start
+
+cd app-vue
+yarn
+yarn dev
+```
