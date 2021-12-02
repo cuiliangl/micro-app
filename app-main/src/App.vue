@@ -40,7 +40,11 @@ const goto = (activeRule: string) => {
 }
 
 onMounted(() => {
-  start()
+  start({
+    sandbox: {
+      strictStyleIsolation: true
+    }
+  })
 })
 </script>
 

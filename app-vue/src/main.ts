@@ -17,26 +17,18 @@ function render(props: any = {}) {
   })
 
   app = createApp(App)
-  app.use(router).mount(container ? container.querySelector('#app') : '#app')
+  app.use(router).mount(container || '#app')
 }
 
-qiankunWindow.customxxx = 'ssss'
-
 if (qiankunWindow.__POWERED_BY_QIANKUN__) {
-  console.log('我正在作为子应用运行')
-
   renderWithQiankun({
-    bootstrap() {
-      console.log('app-vue: bootstrap')
-    },
+    bootstrap() {},
     mount(props) {
-      console.log('vue-app: mount 作为子应用运行')
-
       render(props)
     },
     unmount() {
-      console.log('vue-app: unmount')
       app.unmount()
+      app = null
     }
   })
 }
