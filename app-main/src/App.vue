@@ -1,6 +1,9 @@
 <template>
   <div class="main">
-    <header class="main-header"><h2>主应用头部区域</h2></header>
+    <header class="main-header">
+      <h2>主应用头部区域</h2>
+      <button @click="updatehandle">update age</button>
+    </header>
     <div class="container">
       <nav class="nav">
         <p>主应用菜单栏</p>
@@ -30,6 +33,18 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { start } from 'qiankun'
 import microApps from './micro-app'
+import actions from './actions'
+
+console.log(actions)
+
+const updatehandle = () => {
+  actions.setGlobalState({
+    userInfo: {
+      name: 'mike',
+      age: 45
+    }
+  })
+}
 
 const router = useRouter()
 const current = ref('main-view')

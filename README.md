@@ -18,19 +18,20 @@
 
 ## setup
 
+### 安装主工程依赖
+
 ```sh
-# 主应用
-cd app-main
 yarn
-yarn dev
+```
 
-# 子应用
-cd app-react
-yarn
-yarn start
+### 安装所有主子应用的依赖
 
-# 子应用
-cd app-vue
-yarn
+```sh
+yarn install
+```
+
+### 启动所有应用
+
+```sh
 yarn dev
 ```

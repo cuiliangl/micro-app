@@ -17,6 +17,9 @@ const apps = microApps.map(app => {
     container: '#micro-container',
     props: {
       routerBase: app.activeRule // 下发基础路由
+    },
+    loader(loading: boolean) {
+      console.log('loading', loading)
     }
   }
 })

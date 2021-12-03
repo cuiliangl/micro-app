@@ -15,6 +15,7 @@
     "yarn": "^1.22.17"
   },
   "scripts": {
+    "dev": "react-app-rewired start",
     "start": "react-app-rewired start",
     "build": "react-scripts build",
     "test": "react-scripts test",

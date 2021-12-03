@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import apps from './micro-app'
 import { registerMicroApps, addGlobalUncaughtErrorHandler } from 'qiankun'
+import './actions'
 
 // 注册微应用
 registerMicroApps(apps)

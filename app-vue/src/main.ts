@@ -24,6 +24,11 @@ if (qiankunWindow.__POWERED_BY_QIANKUN__) {
   renderWithQiankun({
     bootstrap() {},
     mount(props) {
+      console.log(props)
+      props.onGlobalStateChange = (state, prev) => {
+        console.log(state, prev)
+      }
+
       render(props)
     },
     unmount() {
